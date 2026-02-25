@@ -30,7 +30,7 @@ class _TodoListPageState extends State<TodoListPage> {
           if (!snapshot.hasData) return const Center(child: CircularProgressIndicator());
 
           final todos = snapshot.data!;
-          if (todos.isEmpty) return const Center(child: Text('No todos found'));
+          if (todos.isEmpty) return const Center(child: Text('No todos'));
 
           return ListView.builder(
             itemCount: todos.length,
